@@ -1,0 +1,12 @@
+[Unit]
+Description=Penguin Mafia's Acid Rain Websever
+After=network.target
+
+[Service]
+ExecStart=/bin/bash ./website.sh
+WorkingDirectory=/var/www/AcidRainWebsite/
+Restart=no
+User=administrator
+
+[Install]
+WantedBy=multi-user.target

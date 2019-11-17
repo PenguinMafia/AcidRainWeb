@@ -1,0 +1,24 @@
+{
+  "name": "AcidRainWeb",
+  "version": "1.0.0",
+  "description": "Web based interface for the Pidgeon Acid Rain prediction system.",
+  "main": "maps-embed.js",
+  "dependencies": {
+    "papaparse": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PenguinMafia/AcidRainWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PenguinMafia/AcidRainWeb/issues"
+  },
+  "homepage": "https://github.com/PenguinMafia/AcidRainWeb#readme"
+}

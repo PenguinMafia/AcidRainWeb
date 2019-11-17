@@ -11,7 +11,7 @@
 <body>
 
   <div class="container text-center">
-    <h1>AI predicted Acid Rain</h1>
+    <h1>AI-predicted Acid Rain</h1>
     <hr/>
     <h2>Current Cities</h2>
     <hr/>
