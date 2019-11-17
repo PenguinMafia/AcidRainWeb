@@ -13,10 +13,8 @@
           More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Our Process</a>
-          <a class="dropdown-item" href="#">Design</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Join Us</a>
+          <a class="dropdown-item" href="process.php">The Process</a>
+          <a class="dropdown-item" href="design.php">Design</a>
         </div>
       </li>
     </ul>
