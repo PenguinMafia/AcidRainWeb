@@ -1,34 +1,39 @@
 //export NODE_ENV=prod
 const config = require('config')
-//var google = require('google')
+var google = require('google')
 //console.log(config.get('api.google-api-key'))
 
-const google = require('@google/maps').createClient({
+var LatLongTest;
+
+const GoogleMapsClient = require('@google/maps').createClient({
     key: config.get('api.google-api-key')
   });
 
+//myLatLng = new google.maps.LatLng({lat: -34, lng: 151}); 
+
+function init(){
+  var latlng = new google.maps.LatLng(-43.552965, 172.47315);
+  input(-43.552965, 172.47315, 1);
+  var myOptions = {
+    zoom: 10,
+    center: latlng,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById("map"), myOptions);
+}
+
+function input(lat, long, weight) {
+  LatLongTest = new google.maps.LatLng(lat, long)
+}
+  
+
 /* Data points defined as a mixture of WeightedLocation and LatLng objects */
 var heatMapData = [
-    {location: new google.maps.LatLng(37.782, -122.447), weight: 0.5},
-    new google.maps.LatLng(37.782, -122.445),
-    {location: new google.maps.LatLng(37.782, -122.443), weight: 2},
-    {location: new google.maps.LatLng(37.782, -122.441), weight: 3},
-    {location: new google.maps.LatLng(37.782, -122.439), weight: 2},
-    new google.maps.LatLng(37.782, -122.437),
-    {location: new google.maps.LatLng(37.782, -122.435), weight: 0.5},
-  
-    {location: new google.maps.LatLng(37.785, -122.447), weight: 3},
-    {location: new google.maps.LatLng(37.785, -122.445), weight: 2},
-    new google.maps.LatLng(37.785, -122.443),
-    {location: new google.maps.LatLng(37.785, -122.441), weight: 0.5},
-    new google.maps.LatLng(37.785, -122.439),
-    {location: new google.maps.LatLng(37.785, -122.437), weight: 2},
-    {location: new google.maps.LatLng(37.785, -122.435), weight: 3}
+    {location: LatLongTest, weight: 0.5}
   ];
+var sanFrancisco = google.maps.LatLng(37.774546, -122.433523);
   
-  var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
-  
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new GoogleMapsClient(document.getElementById('map'), {
     center: sanFrancisco,
     zoom: 13,
     mapTypeId: 'satellite'
