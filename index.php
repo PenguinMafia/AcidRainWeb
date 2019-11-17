@@ -6,7 +6,7 @@
   <?php
    include 'res/nav.php';
   ?>
-<title>Skycid - Home</title>
+<title>Pidgeon - Home</title>
 </head>
 <body>
 
