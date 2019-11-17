@@ -35,14 +35,14 @@ function doSomethingWithTextBox()
   <p><b>Location</b>:  <p id="#ph"></p>
   <p><b>Days in future</b>:  <p id="#day">xxx</p>
   <p><b>Time</b>:  <p id="#ph">xxx</p>
-  <p><b>Temperature</b>:  <p id="#ph">xxx</p>
+  <p><b>Amount of Acid Rain predicted</b>:  <p id="#amt">xxx</p>
 </div>
 
 <script>
   var x = document.getElementById('#ph');
   x.innerHTML = "5.7";
 
-  var bob = document.getElementById('#day');
+  var bob = document.getElementById('#amt');
   bob.innerHTML = result;
 
 </script>
