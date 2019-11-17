@@ -1,7 +1,15 @@
-function cityLoad(){
-  var cityState = document.getElementById('#city-full');
-  var city = document.getElementById('#city');
-  var ppm = document.getElementById('#ppm');
-  var ppm = document.getElementById('#ph');
+function cityData(){
+  var phShow = document.getElementById('#phShow');
+  var tempShow = document.getElementById('#tempShow');
+  
 
 }
+
+
+
+// Without JQuery
+var slider = new Slider('#ex1', {
+	formatter: function(value) {
+		return 'Current value: ' + value;
+	}
+});

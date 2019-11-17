@@ -200,3 +200,8 @@ hr.style19 {
     align-self: center;
     margin: 0 auto;
 }
+
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}

@@ -28,18 +28,21 @@
 <div class="col-md-6 text-left">
   <h1>Data for Houston, Texas</h1>
   <div class="row">
-  <p><b>CO2 PPM</b>:  </p><p id="#ppm">xxx</p>
-  </div>
-  <div class="row">
-  <p><b>Condensed Water pH</b>:  <p id="#ph">xxx</p>
+  <p><b>Dew Water pH</b>:  <p id="#ph">xxx</p>
+  <p><b>Location</b>:  <p id="#ph">xxx</p>
+  <p><b>Date</b>:  <p id="#ph">xxx</p>
+  <p><b>Time</b>:  <p id="#ph">xxx</p>
+  <p><b>Temperature</b>:  <p id="#ph">xxx</p>
 </div>
+
 <script>
-  var x = document.getElementById('#ppm');
-  x.innerHTML = "200";
+  var x = document.getElementById('#ph');
+  x.innerHTML = "5.7";
 
 </script>
 </div>
 </div>
+<input id="ex1" data-slider-id='ex1Slider' enabled="true" tooltip="always"tooltip_position="show" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
 <hr class="style18"/>
 </div>
 
