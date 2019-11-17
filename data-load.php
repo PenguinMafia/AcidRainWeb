@@ -17,7 +17,7 @@ function doSomethingWithTextBox()
 }
 
 </script>
-<script src="commie/prediction.txt" type="text/javascript"></script>
+<script src="commie/predict.txt" type="text/javascript"></script>
 </head>
 <body>
 
@@ -31,10 +31,9 @@ function doSomethingWithTextBox()
 <div class="col-md-6 text-left">
   <h1>Data for Houston, Texas</h1>
   <div class="row">
-  <p><b>Dew Water pH</b>:  <p id="#ph">xxx</p>
-  <p><b>Location</b>:  <p id="#ph"></p>
-  <p><b>Days in future</b>:  <p id="#day">xxx</p>
-  <p><b>Time</b>:  <p id="#ph">xxx</p>
+  <p><b>pH</b>:  <p id="#ph">xxx</p>
+  <p><b>Location</b>:  <p id="#loc"></p>
+  <p><b>Days in future</b>:  <p id="#day">xxx</p></p>
   <p><b>Amount of Acid Rain predicted</b>:  <p id="#amt">xxx</p>
 </div>
 
