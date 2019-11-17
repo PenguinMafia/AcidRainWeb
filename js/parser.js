@@ -12,6 +12,8 @@ errorCount = 0;
 firstError = undefined;
 
 let results;
+let latitude;
+let longitude;
 
 /*
 39.1963, {3}
@@ -22,17 +24,22 @@ let results;
 const csvData = Papa.parse(file, {
     header: false,
     worker: true,
-    step: function(results) {
+    complete: function(results) {
         //console.log("Row:", results.data);
-        console.log(results.data[3]) // this is hacky but THIS IS A HACKATHON SO LOL!
-        //printStats(results.data)
-        results = results.data;
+        //console.log(results.data[3]) // this is hacky but THIS IS A HACKATHON SO LOL!
+        printStats(results.data)
+        latitude = results.data[3];
+        longitude = results.data[4];
+
 
     }
 });
 
 
+
+
 function printStats(msg) {
+    getLatResults(msg[3])
 	if (msg)
 		console.log(msg);
     if (errorCount)
@@ -41,7 +48,23 @@ function printStats(msg) {
 		        console.log("First error:", firstError);
 }
 
-console.log("test:")
-console.log(results);
+function getLatResults(arr) {
+    latitude = arr;
+}
+console.log('-----');
+console.log(latitude);
+
+
+var LatLongArray = [new Array('lat', 'long')];
+two1dto2d(LatLongArray, latitude, longitude);
+
+function two1dto2d(c, a, b) {
+  for (var i = 0; i < a.length; i++) {
+    c.push([a[i], b[i]]);
+  }
+}
+
+console.log('arr: ')
+console.log(LatLongArray[4])
 
 

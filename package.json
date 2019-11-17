@@ -4,6 +4,9 @@
   "description": "Web based interface for the Pidgeon Acid Rain prediction system.",
   "main": "maps-embed.js",
   "dependencies": {
+    "@google/maps": "^1.0.2",
+    "config": "^3.2.4",
+    "google": "^2.1.0",
     "papaparse": "^5.1.0"
   },
   "devDependencies": {},
