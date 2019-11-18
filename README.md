@@ -1,8 +1,8 @@
-# Project: Pidgeon
+# Project: Pigeon
 ## *Presented by: The Penguin Mafia* 
-### ***What is Project: Pidgeon?***
+### ***What is Project: Pigeon?***
 
-Project: Pidgeon is a drone with an installed probe that allows the user to collect atmospheric information. 
+Project: Pigeon is a standalone node or drone and with an installed probe that allows the user to collect atmospheric information. 
 
 ### But how?
 
