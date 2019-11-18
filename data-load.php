@@ -6,9 +6,8 @@
   <?php
    include 'res/nav.php';
   ?>
-<title>Pidgeon - Data</title>
+<title>Pigeon - Data</title>
 <script type="text/javascript">
-
 function doSomethingWithTextBox()
 {
   var textBox = document.getElementById('TEXTBOX_ID');
@@ -48,7 +47,7 @@ function doSomethingWithTextBox()
 </div>
 </div>
 <input type="text" id="TEXTBOX_ID"> <p># of Days in the future</p>
-
+<a class="btn btn-primary">Predict!</a>
 <hr class="style18"/>
 </div>
 

@@ -6,7 +6,7 @@
   <?php
    include 'res/nav.php';
   ?>
-<title>Pidgeon - Data</title>
+<title>Pigeon - Data</title>
 </head>
 <body>
 

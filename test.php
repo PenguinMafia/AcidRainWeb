@@ -31,11 +31,15 @@ function initMap() {
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
+
+
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPyl_AI8J70m2bhDV3f-t7GqR0w79-U3c&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key_Here&callback=initMap">
     </script>
     <script type="text/javascript"
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPyl_AI8J70m2bhDV3f-t7GqR0w79-U3c&libraries=visualization">
+  src="https://maps.googleapis.com/maps/api/js?key=Your_API_Key_Here&libraries=visualization">
+
+  
   /* Data points defined as an array of LatLng objects */
 var heatmapData = [
   new google.maps.LatLng(37.782, -122.447),

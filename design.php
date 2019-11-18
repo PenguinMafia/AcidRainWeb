@@ -7,7 +7,7 @@
    include 'res/nav.php';
   ?>
   <script src="js/init.js" ></script>
-<title>Pidgeon - Data</title>
+<title>Pigeon - Data</title>
 </head>
 <body>
 
